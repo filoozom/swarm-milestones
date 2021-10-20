@@ -1,0 +1,146 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Work+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+	font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #242424;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ol {
+  counter-reset: item;
+}
+
+li h1:before,
+li h2:before,
+li h3:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+}
+
+#wrap {
+	padding: 0 16px;
+	padding-top: 64px;
+	margin-bottom: 32px;
+	max-width: 640px;
+	margin: auto;
+	display: block;
+}
+
+#logo {
+	height: 30px;	
+	margin-bottom: 64px;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 35px;
+	font-weight: 800;
+	letter-spacing: -0.25px;
+  color: #242424;
+  margin-bottom: 16px;
+}
+
+h2, h3, h4 {
+	margin-bottom: 8px;
+	font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  color: #242424;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -0.24px;
+  color: #242424;
+}
+
+h4 {
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 1.43;
+}
+
+ul {
+	list-style: disc outside none;
+	margin-bottom: 16px;
+}
+
+ul li {
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #606060;
+  margin-left: 24px;
+}
+
+p {
+	margin-bottom: 16px;
+}
+
+hr {
+	margin: 32px 0;
+	border-color: #c9c9c9;
+}
+
+@media screen and (min-width: 768px) {
+	#wrap {
+		padding: 0 64px;
+		padding-top: 133px;
+		margin: auto;
+		padding-bottom: 133px;
+	}
+
+	#logo {
+		height: 30px;	
+		margin-bottom: 133px;
+	}
+
+	hr {
+		margin: 64px 0;
+	}
+
+	p {
+	  font-size: 20px;
+	  line-height: 27px;
+	  letter-spacing: normal;
+	  color: #242424;
+	}
+
+	p, ul {
+	  margin-bottom: 32px;
+	}
+
+	ol ul p, ol ol p {
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	h2, h3, h4 {
+		margin-bottom: 16px;
+	}
+}

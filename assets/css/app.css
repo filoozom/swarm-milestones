@@ -18,8 +18,11 @@ ol {
   counter-reset: item;
 }
 
+li h2:before {
+	content: counters(item, ".") ". ";
+  counter-increment: item;
+}
 li h1:before,
-li h2:before,
 li h3:before {
   content: counters(item, ".") " ";
   counter-increment: item;
